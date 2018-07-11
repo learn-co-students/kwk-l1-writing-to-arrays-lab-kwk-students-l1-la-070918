@@ -1,22 +1,19 @@
-rainbow_colors = [
+ RAINBOW_COLORS = [
   "yellow",
   "default",
   "light_cyan"
 ]
 
 def change_rainbow_colors
-change_rainbow_colors[0] = "red"
-puts change_rainbow_colors[0]
-change_rainbow_colors[1] = "light_red"
-puts change_rainbow_colors[1]
- change_rainbow_colors[2] = "light_yellow"
- puts change_rainbow_colors[2]
+RAINBOW_COLORS[0] = "red"
+RAINBOW_COLORS[1] = "light_red"
+RAINBOW_COLORS[2] = "light_yellow"
+return RAINBOW_COLORS
 end
-change_rainbow_colors
 
-def add_colors; 
-  puts add_colors.push "green"
- puts add_colors.push "blue"
-  # Write a solution that adds "green", then "blue" to the rainbow_colors array, then returns the array
+
+
+def add_colors
+  RAINBOW_COLORS << "green"
+ RAINBOW_COLORS << "blue"
 end
-add_colors
